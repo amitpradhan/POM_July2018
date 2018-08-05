@@ -1,0 +1,313 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>8/1/2</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Jul 28 17:32:23 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>364 seconds (364753 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.crm.testcases.HomePageTest.setUp()'><b>setUp</b><br>Test class: com.crm.testcases.HomePageTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Command duration or timeout: 60.13 seconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Admin-PC&apos;, ip: &apos;192.168.1.108&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 7b098ee5-657b-4391-80c0-f2a10feaeee4
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:335)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:348)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at com.crm.qa.pages.LoginPage.login(LoginPage.java:47)
+	at com.crm.testcases.HomePageTest.setUp(HomePageTest.java:39)
+Caused by: org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Admin-PC&apos;, ip: &apos;192.168.1.108&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.Utils.installClickListener/e&lt;(file:///C:/Users/Admin/AppData/Local/Temp/anonymous5981686161568166525webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:9372)
+	at &lt;anonymous class&gt;.WebLoadingListener/e(file:///C:/Users/Admin/AppData/Local/Temp/anonymous5981686161568166525webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:5142)
+	at &lt;anonymous class&gt;.WebLoadingListener/&lt;(file:///C:/Users/Admin/AppData/Local/Temp/anonymous5981686161568166525webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:5150)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Admin/AppData/Local/Temp/anonymous5981686161568166525webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:625)
+... Removed 38 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace14019442", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace14019442'><pre>org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Command duration or timeout: 60.13 seconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Admin-PC&apos;, ip: &apos;192.168.1.108&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 7b098ee5-657b-4391-80c0-f2a10feaeee4
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:335)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:348)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at com.crm.qa.pages.LoginPage.login(LoginPage.java:47)
+	at com.crm.testcases.HomePageTest.setUp(HomePageTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Admin-PC&apos;, ip: &apos;192.168.1.108&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.Utils.installClickListener/e&lt;(file:///C:/Users/Admin/AppData/Local/Temp/anonymous5981686161568166525webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:9372)
+	at &lt;anonymous class&gt;.WebLoadingListener/e(file:///C:/Users/Admin/AppData/Local/Temp/anonymous5981686161568166525webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:5142)
+	at &lt;anonymous class&gt;.WebLoadingListener/&lt;(file:///C:/Users/Admin/AppData/Local/Temp/anonymous5981686161568166525webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:5150)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Admin/AppData/Local/Temp/anonymous5981686161568166525webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:625)
+</pre></div></td>
+<td>0</td>
+<td>com.crm.testcases.HomePageTest@25b2fe</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.crm.testcases.HomePageTest.setUp()'><b>setUp</b><br>Test class: com.crm.testcases.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.crm.testcases.HomePageTest@25b2fe</td></tr>
+<tr>
+<td title='com.crm.testcases.HomePageTest.tearDown()'><b>tearDown</b><br>Test class: com.crm.testcases.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.crm.testcases.HomePageTest@25b2fe</td></tr>
+<tr>
+<td title='com.crm.testcases.HomePageTest.tearDown()'><b>tearDown</b><br>Test class: com.crm.testcases.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.crm.testcases.HomePageTest@25b2fe</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.crm.testcases.LoginPageTest.loginPageTitle()'><b>loginPageTitle</b><br>Test class: com.crm.testcases.LoginPageTest</td>
+<td><div><pre>java.lang.AssertionError: expected [#1 Free CRM for Any Business: Online Customer Relationship Softwarefailing intentinally.] but found [Free CRM software in the cloud powers sales and customer service]
+	at com.crm.testcases.LoginPageTest.loginPageTitle(LoginPageTest.java:51)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace9584358", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace9584358'><pre>java.lang.AssertionError: expected [#1 Free CRM for Any Business: Online Customer Relationship Softwarefailing intentinally.] but found [Free CRM software in the cloud powers sales and customer service]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at com.crm.testcases.LoginPageTest.loginPageTitle(LoginPageTest.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.crm.testcases.LoginPageTest@1622fdf</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.crm.testcases.LoginPageTest.crmLogoImageTest()'><b>crmLogoImageTest</b><br>Test class: com.crm.testcases.LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.crm.testcases.LoginPageTest@1622fdf</td></tr>
+<tr>
+<td title='com.crm.testcases.LoginPageTest.loginTest()'><b>loginTest</b><br>Test class: com.crm.testcases.LoginPageTest</td>
+<td></td>
+<td>9</td>
+<td>com.crm.testcases.LoginPageTest@1622fdf</td></tr>
+<tr>
+<td title='com.crm.testcases.ContactsPageTest.selectMultipleContactTest()'><b>selectMultipleContactTest</b><br>Test class: com.crm.testcases.ContactsPageTest</td>
+<td></td>
+<td>3</td>
+<td>com.crm.testcases.ContactsPageTest@6ba0ac</td></tr>
+<tr>
+<td title='com.crm.testcases.ContactsPageTest.selectSingleContactTest()'><b>selectSingleContactTest</b><br>Test class: com.crm.testcases.ContactsPageTest</td>
+<td></td>
+<td>2</td>
+<td>com.crm.testcases.ContactsPageTest@6ba0ac</td></tr>
+<tr>
+<td title='com.crm.testcases.ContactsPageTest.validateCreatenewContact()'><b>validateCreatenewContact</b><br>Test class: com.crm.testcases.ContactsPageTest<br>Parameters: Mr., Amit, Kumar, Amazon</td>
+<td></td>
+<td>6</td>
+<td>com.crm.testcases.ContactsPageTest@6ba0ac</td></tr>
+<tr>
+<td title='com.crm.testcases.ContactsPageTest.validateCreatenewContact()'><b>validateCreatenewContact</b><br>Test class: com.crm.testcases.ContactsPageTest<br>Parameters: Dr., Amitabh, Bachhan, Google</td>
+<td></td>
+<td>5</td>
+<td>com.crm.testcases.ContactsPageTest@6ba0ac</td></tr>
+<tr>
+<td title='com.crm.testcases.ContactsPageTest.validateCreatenewContact()'><b>validateCreatenewContact</b><br>Test class: com.crm.testcases.ContactsPageTest<br>Parameters: Mrs., Shreya, Kumari, Microsoft</td>
+<td></td>
+<td>5</td>
+<td>com.crm.testcases.ContactsPageTest@6ba0ac</td></tr>
+<tr>
+<td title='com.crm.testcases.HomePageTest.verifyHomePageTitleTest()'><b>verifyHomePageTitleTest</b><br>Test class: com.crm.testcases.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.crm.testcases.HomePageTest@25b2fe</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.crm.testcases.HomePageTest.verifyContactsLinkTest()'><b>verifyContactsLinkTest</b><br>Test class: com.crm.testcases.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.crm.testcases.HomePageTest@25b2fe</td></tr>
+<tr>
+<td title='com.crm.testcases.HomePageTest.verifyUserNameTest()'><b>verifyUserNameTest</b><br>Test class: com.crm.testcases.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.crm.testcases.HomePageTest@25b2fe</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="2" failed="1" total="11" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="CRM Free Application Test" duration-ms="364753" started-at="2018-07-28T12:02:23Z" finished-at="2018-07-28T12:08:28Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="364753" started-at="2018-07-28T12:02:23Z" finished-at="2018-07-28T12:08:28Z">
+      <class name="com.crm.testcases.HomePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.testcases.HomePageTest@25b2fe]" name="setUp" is-config="true" duration-ms="29782" started-at="2018-07-28T17:32:23Z" finished-at="2018-07-28T17:32:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyHomePageTitleTest()[pri:0, instance:com.crm.testcases.HomePageTest@25b2fe]" name="verifyHomePageTitleTest" duration-ms="70" started-at="2018-07-28T17:32:53Z" finished-at="2018-07-28T17:32:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.testcases.HomePageTest@25b2fe]" name="tearDown" is-config="true" duration-ms="838" started-at="2018-07-28T17:32:53Z" finished-at="2018-07-28T17:32:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="setUp()[pri:0, instance:com.crm.testcases.HomePageTest@25b2fe]" name="setUp" is-config="true" duration-ms="0" started-at="2018-07-28T17:32:54Z" finished-at="2018-07-28T17:32:54Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Timed out waiting for page load.
+Command duration or timeout: 60.13 seconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Admin-PC', ip: '192.168.1.108', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 7b098ee5-657b-4391-80c0-f2a10feaeee4]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Command duration or timeout: 60.13 seconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Admin-PC', ip: '192.168.1.108', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 7b098ee5-657b-4391-80c0-f2a10feaeee4
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:335)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:348)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at com.crm.qa.pages.LoginPage.login(LoginPage.java:47)
+	at com.crm.testcases.HomePageTest.setUp(HomePageTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Admin-PC', ip: '192.168.1.108', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: unknown
+	at <anonymous class>.Utils.installClickListener/e<(file:///C:/Users/Admin/AppData/Local/Temp/anonymous5981686161568166525webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:9372)
+	at <anonymous class>.WebLoadingListener/e(file:///C:/Users/Admin/AppData/Local/Temp/anonymous5981686161568166525webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:5142)
+	at <anonymous class>.WebLoadingListener/<(file:///C:/Users/Admin/AppData/Local/Temp/anonymous5981686161568166525webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:5150)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/Admin/AppData/Local/Temp/anonymous5981686161568166525webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:625)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="verifyUserNameTest()[pri:0, instance:com.crm.testcases.HomePageTest@25b2fe]" name="verifyUserNameTest" duration-ms="3" started-at="2018-07-28T17:34:14Z" finished-at="2018-07-28T17:34:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserNameTest -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.crm.testcases.HomePageTest@25b2fe]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-07-28T17:34:14Z" finished-at="2018-07-28T17:34:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.crm.testcases.HomePageTest@25b2fe]" name="setUp" is-config="true" duration-ms="0" started-at="2018-07-28T17:34:14Z" finished-at="2018-07-28T17:34:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="verifyContactsLinkTest()[pri:0, instance:com.crm.testcases.HomePageTest@25b2fe]" name="verifyContactsLinkTest" duration-ms="2" started-at="2018-07-28T17:34:14Z" finished-at="2018-07-28T17:34:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyContactsLinkTest -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.crm.testcases.HomePageTest@25b2fe]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-07-28T17:34:14Z" finished-at="2018-07-28T17:34:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.crm.testcases.HomePageTest -->
+      <class name="com.crm.testcases.ContactsPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.testcases.ContactsPageTest@6ba0ac]" name="setUp" is-config="true" duration-ms="30069" started-at="2018-07-28T17:34:15Z" finished-at="2018-07-28T17:34:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateCreatenewContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.crm.testcases.ContactsPageTest@6ba0ac]" name="validateCreatenewContact" duration-ms="6226" started-at="2018-07-28T17:34:45Z" data-provider="getCRMTestData" finished-at="2018-07-28T17:34:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mr.]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Amit]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Kumar]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Amazon]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreatenewContact -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.testcases.ContactsPageTest@6ba0ac]" name="tearDown" is-config="true" duration-ms="682" started-at="2018-07-28T17:34:51Z" finished-at="2018-07-28T17:34:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.testcases.ContactsPageTest@6ba0ac]" name="setUp" is-config="true" duration-ms="29917" started-at="2018-07-28T17:34:52Z" finished-at="2018-07-28T17:35:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateCreatenewContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.crm.testcases.ContactsPageTest@6ba0ac]" name="validateCreatenewContact" duration-ms="5693" started-at="2018-07-28T17:35:22Z" data-provider="getCRMTestData" finished-at="2018-07-28T17:35:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dr.]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Amitabh]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Bachhan]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Google]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreatenewContact -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.testcases.ContactsPageTest@6ba0ac]" name="tearDown" is-config="true" duration-ms="719" started-at="2018-07-28T17:35:28Z" finished-at="2018-07-28T17:35:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.testcases.ContactsPageTest@6ba0ac]" name="setUp" is-config="true" duration-ms="34159" started-at="2018-07-28T17:35:28Z" finished-at="2018-07-28T17:36:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateCreatenewContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.crm.testcases.ContactsPageTest@6ba0ac]" name="validateCreatenewContact" duration-ms="5437" started-at="2018-07-28T17:36:03Z" data-provider="getCRMTestData" finished-at="2018-07-28T17:36:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mrs.]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Shreya]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Kumari]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Microsoft]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreatenewContact -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.testcases.ContactsPageTest@6ba0ac]" name="tearDown" is-config="true" duration-ms="905" started-at="2018-07-28T17:36:08Z" finished-at="2018-07-28T17:36:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.testcases.ContactsPageTest@6ba0ac]" name="setUp" is-config="true" duration-ms="36627" started-at="2018-07-28T17:36:09Z" finished-at="2018-07-28T17:36:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="selectSingleContactTest()[pri:0, instance:com.crm.testcases.ContactsPageTest@6ba0ac]" name="selectSingleContactTest" duration-ms="2732" started-at="2018-07-28T17:36:45Z" finished-at="2018-07-28T17:36:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectSingleContactTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.testcases.ContactsPageTest@6ba0ac]" name="tearDown" is-config="true" duration-ms="874" started-at="2018-07-28T17:36:48Z" finished-at="2018-07-28T17:36:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.testcases.ContactsPageTest@6ba0ac]" name="setUp" is-config="true" duration-ms="25165" started-at="2018-07-28T17:36:49Z" finished-at="2018-07-28T17:37:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="selectMultipleContactTest()[pri:0, instance:com.crm.testcases.ContactsPageTest@6ba0ac]" name="selectMultipleContactTest" duration-ms="3538" started-at="2018-07-28T17:37:14Z" finished-at="2018-07-28T17:37:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectMultipleContactTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.testcases.ContactsPageTest@6ba0ac]" name="tearDown" is-config="true" duration-ms="664" started-at="2018-07-28T17:37:18Z" finished-at="2018-07-28T17:37:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.crm.testcases.ContactsPageTest -->
+      <class name="com.crm.testcases.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.testcases.LoginPageTest@1622fdf]" name="setUp" is-config="true" duration-ms="18039" started-at="2018-07-28T17:37:18Z" finished-at="2018-07-28T17:37:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="loginPageTitle()[pri:0, instance:com.crm.testcases.LoginPageTest@1622fdf]" name="loginPageTitle" duration-ms="87" started-at="2018-07-28T17:37:36Z" finished-at="2018-07-28T17:37:37Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [#1 Free CRM for Any Business: Online Customer Relationship Softwarefailing intentinally.] but found [Free CRM software in the cloud powers sales and customer service]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [#1 Free CRM for Any Business: Online Customer Relationship Softwarefailing intentinally.] but found [Free CRM software in the cloud powers sales and customer service]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at com.crm.testcases.LoginPageTest.loginPageTitle(LoginPageTest.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.testcases.LoginPageTest@1622fdf]" name="tearDown" is-config="true" duration-ms="1140" started-at="2018-07-28T17:37:37Z" finished-at="2018-07-28T17:37:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.testcases.LoginPageTest@1622fdf]" name="setUp" is-config="true" duration-ms="19177" started-at="2018-07-28T17:37:38Z" finished-at="2018-07-28T17:37:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="crmLogoImageTest()[pri:0, instance:com.crm.testcases.LoginPageTest@1622fdf]" name="crmLogoImageTest" duration-ms="215" started-at="2018-07-28T17:37:57Z" finished-at="2018-07-28T17:37:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- crmLogoImageTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.testcases.LoginPageTest@1622fdf]" name="tearDown" is-config="true" duration-ms="626" started-at="2018-07-28T17:37:57Z" finished-at="2018-07-28T17:37:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.testcases.LoginPageTest@1622fdf]" name="setUp" is-config="true" duration-ms="19586" started-at="2018-07-28T17:37:58Z" finished-at="2018-07-28T17:38:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.crm.testcases.LoginPageTest@1622fdf]" name="loginTest" duration-ms="9568" started-at="2018-07-28T17:38:17Z" finished-at="2018-07-28T17:38:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.testcases.LoginPageTest@1622fdf]" name="tearDown" is-config="true" duration-ms="866" started-at="2018-07-28T17:38:27Z" finished-at="2018-07-28T17:38:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.crm.testcases.LoginPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- CRM Free Application Test -->
+</testng-results>
