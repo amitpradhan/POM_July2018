@@ -35,6 +35,7 @@ public class TestBase {
 	//step1 - create public constructor
 		// load config.properties file in the constructor
 		public TestBase(){
+			System.out.println("Test base constructor..");
 			prop = new Properties();
 		try {
 			FileInputStream fis= new FileInputStream

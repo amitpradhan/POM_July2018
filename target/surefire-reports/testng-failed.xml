@@ -3,19 +3,18 @@
 <suite verbose="0" name="Failed suite [Command line suite]">
   <test name="Command line test(failed)">
     <classes>
-      <class name="com.crm.testcases.ContactsPageTest">
-        <methods>
-          <include name="validateCreatenewContact" invocation-numbers="2"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.crm.testcases.ContactsPageTest -->
       <class name="com.crm.testcases.HomePageTest">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.crm.testcases.HomePageTest -->
+      <class name="com.crm.testcases.ContactsPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.crm.testcases.ContactsPageTest -->
       <class name="com.crm.testcases.LoginPageTest">
         <methods>
           <include name="loginPageTitle"/>
